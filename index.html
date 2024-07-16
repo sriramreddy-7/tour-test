@@ -257,13 +257,19 @@
                     <img src="images/Hri1.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="images/Hrishi11.jpg" alt="" class="image" />
+                    <img src="images/Hrithik1.jpg" alt="" class="image" />
                 </div>
                 <div>
-                    <img src="images/Shashank1.jpg" alt="" />
+                    <img src="images/Kir1.jpg" alt="" />
                 </div>
                 <div>
-                    <img src="images/Shashank11.jpg" alt="" class="image" />
+                    <img src="images/Kiranmai11.jpg" alt="" class="image" />
+                </div>
+                <div>
+                    <img src="images/sham1.jpg" alt="" />
+                </div>
+                <div>
+                    <img src="images/Shama11.jpg" alt="" class="image" />
                 </div>
             </div>
         </div>
@@ -271,47 +277,38 @@
 
     <script>
         $(function () {
-            $("#mybook").booklet({
+            $('#mybook').booklet({
                 width: 800,
                 height: 500,
-                speed: 600,
-                direction: "LTR",
-                startingPage: 0,
-                easing: "easeInOutQuad",
-                easeIn: "easeInQuad",
-                easeOut: "easeOutQuad",
                 closed: true,
-                closedFrontTitle: null,
-                closedFrontChapter: null,
-                closedBackTitle: null,
-                closedBackChapter: null,
-                covers: false,
-                pagePadding: 10,
-                pageNumbers: true,
-                hovers: false,
-                overlays: false,
-                tabs: false,
-                tabWidth: 60,
-                tabHeight: 20,
+                auto: false,
+                pageNumbers: false,
+                overlays: true,
                 arrows: true,
-                cursor: "pointer",
-                hash: false,
-                keyboard: true,
-                next: $("#next_page_button"),
-                prev: $("#prev_page_button"),
-                menu: null,
                 pageSelector: false,
-                chapterSelector: false,
+                manual: true,
+                hovers: false,
+                speed: 600,
                 shadows: true,
                 shadowTopFwdWidth: 166,
                 shadowTopBackWidth: 166,
                 shadowBtmWidth: 50,
-                before: function () { },
-                after: function () { }
+                circular: true,
+                closedFrontTitle: 'Moleskine Notebook',
+                closedFrontChapter: 'Chapter 1',
+                closedBackTitle: 'by Preetham',
+                covers: true,
+                pagePadding: 10,
+                pageBorder: 1,
+                pageBorderWidth: 1,
+                menu: '#menu',
+                next: '#next_page_button',
+                prev: '#prev_page_button'
             });
-            $("#mybook").show();
+
+            $('#mybook').show();
         });
     </script>
 </body>
 
-</html>
+</html
